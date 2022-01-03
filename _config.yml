@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Park Byungyoon"
-  avatar           : # "/assets/images/avatar.jpg"
+  avatar           : "/assets/images/avatar.png"
   bio              : # "I am an **amazing** person."
   location         : # "Somewhere"
   email            :
