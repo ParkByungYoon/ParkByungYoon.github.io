@@ -1,4 +1,7 @@
-
+---
+layout: single
+title: "boostcamp AI tech Daily Report - 01"
+---
 ## 1. 새로 알게된 내용
 - **컴파일 vs 인터프리터**
 		- 컴파일러는 High level 언어를 컴퓨터가 이해할 수 있는 형태로 변형을 시켜 빠른 실행과 다른 컴퓨터 해당 프로그램 설치에 유용
