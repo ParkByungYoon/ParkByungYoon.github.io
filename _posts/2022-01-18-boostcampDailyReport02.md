@@ -20,8 +20,7 @@ title: "boostcamp AI tech Daily Report - 02"
 
 
 ## 2. 내일 해야할 공부
-- AI math 경사하강법 복습 (목적식 편미분)
-- AI math 딥러닝 학습방법
+- AI math 딥러닝 학습방법 + 
 - Python Basics 강의 + Text Processing 1 과제
 
 ## 3. 회고
