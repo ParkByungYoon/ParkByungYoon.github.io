@@ -16,6 +16,7 @@ title: "boostcamp AI tech Daily Report - 02"
 ![jpg](/assets/images/2022-01-18/20220118_234214559.jpg)
 
   - 각 element가 곱해지는 모습을 보면 matrix 연산과 같아 위와 같이 수식 전개가 가능함을 할 수 있다 (Vectorization)
+  - http://taewan.kim/post/cost_function_derivation/
 
 
 ## 2. 내일 해야할 공부
