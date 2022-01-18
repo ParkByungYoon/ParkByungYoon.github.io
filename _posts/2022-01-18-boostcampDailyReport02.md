@@ -11,8 +11,10 @@ title: "boostcamp AI tech Daily Report - 02"
 	- Moore-Penrose 역행렬을 이용하면 L2-norm을 최소화하는 beta를 찾을 수 있다.
 	https://ko.wikipedia.org/wiki/%EC%84%A0%ED%98%95_%ED%9A%8C%EA%B7%80#%EC%86%90%EC%8B%A4_%ED%95%A8%EC%88%98
 - **경사하강법으로 선형회귀 계수 구하기 (수식 전개)**
+
 ![jpg](/assets/images/2022-01-18/20220118_234040196.jpg)
 ![jpg](/assets/images/2022-01-18/20220118_234214559.jpg)
+
   - 각 element가 곱해지는 모습을 보면 matrix 연산과 같아 위와 같이 수식 전개가 가능함을 할 수 있다 (Vectorization)
 
 
