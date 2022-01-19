@@ -1,4 +1,7 @@
-
+---
+layout: single
+title: 'boostcamp AI tech Daily Report - 03'
+---
 ## 1. 새로 알게된 내용
 - **softmax 함수가 e^x^를 사용하는 이유**
 	- softmax 함수는 시그모이드 함수로부터 유도되었기 때문
