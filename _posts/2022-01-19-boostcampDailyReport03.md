@@ -13,13 +13,9 @@ title: 'boostcamp AI tech Daily Report - 03'
 	- 미분 시 $1−tanh^2(x)$ 가 된다
 - **Backpropagation through time (BPTT)**
 	- loss function의 state에 대한 gradient 구하는 과정
- 
-- ![jpg](/assets/images/2022-01-19/20220120_012955422_02.jpg)
-
+![jpg](/assets/images/2022-01-19/20220120_012955422_02.jpg)
 	- loss function의 학습 가능한 parameter에 대한  gradient 구하는 과정 ($W_rec$에 대해서만 진행)
-
-- ![jpg](/assets/images/2022-01-19/20220120_012955422_03.jpg)
-
+![jpg](/assets/images/2022-01-19/20220120_012955422_03.jpg)
 		- $W_{rec}$ 이나 $W_x$ 에 대한 gradient를 구할 때 summation이 필요한 이유는 각 state가 이전 time step에 대해 고려해야해서 이에 의해 이전 time step에 대한 영향성을 더할 필요가 있기 때문
 		- https://m.blog.naver.com/infoefficien/221210061511
 ## 2. 내일 해야할 공부
