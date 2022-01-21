@@ -6,8 +6,6 @@ title: 'boostcamp AI tech Daily Report - 04'
 ## 1. 새로 알게된 내용
 - **MLE 정규분포 추정 과정**
 ![jpg](/assets/images/2022-01-20/20220120-1.jpg)
-- **MLE 베르누이 분포 추정 과정**
-
 
 
 ## 2. 내일 해야할 공부
