@@ -1,5 +1,6 @@
 ## 1. 새로 알게된 내용
 - **2차원 Covolution 연산**
+
 ![jpg](/assets/images/2022-01-21/20220121_104651.jpg)
 
   -	$[f*g](i,j) = \sum_{p,q}{f(p,q)g(i+p, j+q)}$
