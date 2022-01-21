@@ -1,14 +1,17 @@
 ## 1. 새로 알게된 내용
 - **2차원 Covolution 연산**
-	-	$[f*g](i,j) = \sum_{p,q}{f(p,q)g(i+p, j+q)}$
+![jpg](/assets/images/2022-01-21/20220121_104651.jpg)
+
+  -	$[f*g](i,j) = \sum_{p,q}{f(p,q)g(i+p, j+q)}$
 	- (p,q) = (0,0) (0,1) (1,0) (1,1)
 	- $i$ : 세로 움직임 / $j$ : 가로 움직임
 	- $f(p,q)$ : 커널 
 	- $g(i+p, j+q)$ : 입력
 
-![jpg](/assets/images/2022-01-21/20220121_104651.jpg)
-
 - **카테고리 분포 모수 추정**
+![jpg](/assets/images/2022-01-21/20220121_1.jpg)
+![jpg](/assets/images/2022-01-21/20220121_2.jpg)
+![jpg](/assets/images/2022-01-21/20220121_3.jpg)
 
 ## 2. 내일/주말 해야할 공부
 - Github 블로그 정리
