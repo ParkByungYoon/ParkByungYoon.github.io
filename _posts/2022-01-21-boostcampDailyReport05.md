@@ -1,3 +1,7 @@
+---
+layout: single
+title: 'boostcamp AI tech Daily Report - 05'
+---
 ## 1. 새로 알게된 내용
 - **2차원 Covolution 연산**
 
