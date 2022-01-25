@@ -1,5 +1,5 @@
 ---
-title: boostcamp AI tech Daily Report - 05
+title: boostcamp AI tech Daily Report - 06
 layout: single
 ---
 
