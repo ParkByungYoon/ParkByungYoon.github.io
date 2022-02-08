@@ -1,23 +1,22 @@
 ---
 layout: single
-title: boostcamp AI tech Daily Report - 10
+title: boostcamp AI tech Daily Report - 09
 
 ---
 
 ## 1. 새로 알게된 내용
 
-- Self-Attention을 통한 Encoding 과정
-![jpg](/assets/images/20220208_235538424.jpg)
+- [Bias & Variance Trade off 증명과정](https://ko.wikipedia.org/wiki/%ED%8E%B8%ED%96%A5-%EB%B6%84%EC%82%B0_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EC%98%A4%ED%94%84#%EC%9C%A0%EB%8F%84)
+![jpg](/assets/images/2022-02-07/20220207_233720974.jpg)
 
 ## 2. 내일 해야할 공부
 
-- RNN 마무리, Generative Model 강의 듣기
-- Generative Model 심화과제
+- CNN 마무리, RNN, Generative Model 강의 듣기
+- CNN 심화과제
 
 ## 3. 회고
 
-- 강의
-	- 꽤나 끈질기게 앉아서 했다고 생각했는데 생각보다 진도가 잘 나가지 않은 하루였다. 강의 내용이 어렵기만한 내용들은 아닌데 말이 정리되지 않은 부분들이 있어 이해하기 어려운 듯하다. 
-	- 하지만 내용 자체는 흥미로운 주제들과 흐름을 가지고 있어 집중하게 된다 (그래서 이해 안가는걸 이해하려고 시간을 더 쓰는 것 같다)
-- 시간 관리
-	- 밥을 제때제때 먹기 시작하니 시간을 효율적으로 쓸 수 있게 됐다. 조금 집중력이 떨어질 때가 있지만 그럴 때는 조금 쉬어가되 하루해야할 양을 꼭 채우기 위해 앉아서 꾸준히 해야된다
+- 정해진 시간 잘 지키기
+- 내가 무엇을 얻어 갈 것인가 고민해보기
+  - 내가 잘 할 수 있는 것
+  - 내가 하고싶은 것
