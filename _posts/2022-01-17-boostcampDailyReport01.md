@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "boostcamp AI tech Daily Report - 01"
+title: "Daily Report - 01"
 ---
 ## 1. 새로 알게된 내용
 - **컴파일 vs 인터프리터**

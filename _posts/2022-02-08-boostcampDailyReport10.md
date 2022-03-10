@@ -1,6 +1,6 @@
 ---
 layout: single
-title: boostcamp AI tech Daily Report - 10
+title: Daily Report - 10
 
 ---
 

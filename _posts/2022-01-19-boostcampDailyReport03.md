@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'boostcamp AI tech Daily Report - 03'
+title: 'Daily Report - 03'
 ---
 ## 1. 새로 알게된 내용
 - **softmax 함수가 e^x^를 사용하는 이유**

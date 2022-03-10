@@ -1,6 +1,6 @@
 ---
 layout: single
-title: boostcamp AI tech Daily Report - 07
+title: Daily Report - 07
 ---
 ## 1. 새로 알게된 내용
 - nn.Module

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'boostcamp AI tech Daily Report - 04'
+title: 'Daily Report - 04'
 ---
 
 ## 1. 새로 알게된 내용

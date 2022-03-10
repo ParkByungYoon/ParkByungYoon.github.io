@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "boostcamp AI tech Daily Report - 02"
+title: "Daily Report - 02"
 ---
 ## 1. 새로 알게된 내용
 - **역행렬을 이용한 선형 회귀 분석**
