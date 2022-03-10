@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Gradient Descent'
+title: 'Gradient Descent - 2'
 ---
 
 ## 경사하강법을 통한 선형회귀
