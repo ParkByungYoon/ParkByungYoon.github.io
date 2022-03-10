@@ -1,0 +1,56 @@
+---
+layout: single
+title: 'Recommendation System with MLP'
+---
+## Recommender System with DL
+- 추천시스템에서 딥러닝을 활용하는 이유
+  - Nonlinear Transformation
+    - 복잡한 user-item interaction pattern을 효과적으로 모델링해 user의 선호도를 예측
+  - Representation Learning
+    - DNN은 raw data로부터 feature representation을 학습하기 때문에 feature design하지 않아도 된다
+    - text, image, audio 등 다양한 정보 사용가능
+  - Sequnece Modeling
+    - 추천 시스템에서 next-item prediction, session-based recommendation에 사용된다
+    - sequential한 정보를 학습하고 사용할 수 있기 때문
+  - Flexibility
+    - 활발한 딥러닝 프레임워크
+    - 추천시스템 모델링 flexibility가 높아 더 효율적인 서빙이 가능하다
+- Neural Collaborative Filtering
+  - NN 구조를 추가해 더욱 일반화된 모델 제시
+  - MF의 한계
+    - user와 item 사이 복잡한 관계를 표현하는 것(dot product = linear combination)에 한계를 가지는 mf를 지적
+    - 새로운 user를 space에 표현할 때 모순 발생
+    - latent space의 차원을 높이는 방법 존재 but overfitting 문제 발생
+  - 모델 아키텍쳐
+    - Input Layer (One hot encoding user/item vector)
+    - Embedding Layer
+      - Embedding matrix를 통해 user/item vector가 dense matrix(Latent Vector)로 표현된다
+    - Neural CF Layers
+      - 앞서 나온 두개의 Latent Vector를 Input으로 하는 일반적인 neural network 형태
+    - Output Layer
+      - Logistic 또는 Probit 함수 사용 (0/1 예측)
+  - 최종 모델
+    - MF와 MLP를 앙상블하여 사용
+    - MF와 MLP는 서로 다른 embedding layer 사용
+    - 둘의 output을 concatnate 후 sigmoid를 타고 최종 output 산출
+- Deep Neural Networks for YouTube Recommendations
+  - Scale
+    - 많은 유저와 아이템 vs 제한된 컴퓨팅 파워
+  - Freshness
+    - 새로 업로드 된 컨텐츠를 실시간으로 적절히 조합
+  - Noise
+    - 높은 Sparsity, 다양한 외부요인으로 유저의 행동을 예측하기 어렵다
+    - Implicit Feedback, 낮은 품질의 메타데이터를 잘 활용해야한다
+  - 2단계 추천 시스템
+    - Candidate Generation : 주어진 사용자에 대해 Top N 추천 아이템 생성
+    - Ranking : 스코어를 구하고 최종 추천 리스트를 제공 (유저, 비디오 피쳐를 더 풍부하게 사용)
+  - Candidate Generation 모델
+    - 유저 벡터와 모든 비디오 벡터의 내적을 계산하고 Softmax 함수를 통해 확률값을 구한 뒤 상위 N개의 비디오를 추출
+    - 많은 시간 소요
+    - Annoy, Faiss 같은 ANN 라이브러리를 사용하여 빠르게 서빙
+  - Ranking
+    - 비디오 후보들을 input으로 해 최종 추천될 비디오들의 순위들의 순위를 매긴다
+    - 아이템이 노출되었을 때 클릭할 확률을 예측하는 문제로 Logistic Regression을 사용
+    - 딥러닝 모델로 유저, 비디오 feature를 풍부하게 사용
+    - Loss function에는 클릭 이후 시청 시간을 가중치로 반영한 Weighted Logistic(cross-entropy)
+    - 낚시성/광고성 콘텐츠를 학습에 반영하지 않도록 함

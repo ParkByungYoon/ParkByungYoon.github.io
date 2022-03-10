@@ -1,0 +1,43 @@
+---
+layout: single
+title: 'Recommendation System 연관 분석'
+---
+## 연관 분석
+- 연관 규칙과 탐색 알고리즘
+- 장바구니 분석 / 서열 분석
+- 하나의 상품이 등장했을 때 다른 상품이 같이 등장하는 규칙을 찾는 것
+- 규칙과 연관 규칙
+  - 규칙 : IF **condition** THEN **result**
+  - 연관규칙 : IF **antecedent** THEN **consequent** (두 사건이 빈번하게 발생하는 threshold를 정했을 때 기준을 만족하면 연관규칙)
+  - itemset : antecedent와 consequent 상품들의 집합
+    - antecedent와 consequent는 서로소를 만족한다
+  - support count
+    - 전체 transaction data에서 itemset이 등장하는 횟수
+  - support
+    - 전체 transaction data에서 itemset이 등장하는 비율 
+  - frequent itemset
+    - 유저가 지정한 minimum support 값 이상의 itemset
+- 연관 규칙의 척도
+  - support 
+    - 두 itemset X,Y 모두 포함하는 transaction의 비율
+  - confidence
+    - X가 포함된 transaction 가운데 Y도 포함하는 transaction의 비율
+    - 조건부확률
+  - lift
+    - X가 포함된 transaction 가운데 Y가 등장할 확률 / Y가 등장할 확률
+    - 1이라면 X,Y는 독립적
+    - 1보다 크다면 양의 상관관계
+    - 1보다 작다면 음의 상관관계
+  - Item 수가 많아질수록 rule의 수가 기하급수적으로 많아지므로 유의미한 rule만을 사용해야함
+    - minimum support, minimum confidence로 의미없는 rule을 screen out
+    - lift로 의미있는 rule을 평가
+    - why? P(Z|X) = 0.2 P(Z) = 0.02
+    - P(Y|X) = 0.1 P(Y) = 0.1
+    - X와 Z 사이 rule이 훨씬 유의미
+- 연관 규칙 탐색
+  - Brute-force approach
+    - Item 개수가 늘어나면 기하급수적으로 높아지는 Itemset의 개수로 인해 높은 계산량 요구
+  - Frequent Itemset Generation
+    - Apriori
+    - DHP
+    - FP-Growth

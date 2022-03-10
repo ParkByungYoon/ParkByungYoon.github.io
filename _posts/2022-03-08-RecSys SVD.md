@@ -1,0 +1,49 @@
+---
+layout: single
+title: 'Recommendation System Singular Vector Decomposition'
+---
+# Model Based Collaborative Filtering
+- NBCF 한계
+  - Sparsity 문제
+    - 데이터가 충분치 않다면 추천 성능이 떨어진다
+    - 데이터가 없는 유저 추천이 불가능 Cold start
+  - Scalability 문제
+    - 유저와 아이템이 많아야 정확한 예측 but 시간이 오래걸림
+- MBCF
+  - Parametric Machine Learning
+  - 데이터 정보가 파라미터의 형태로 모델에 압축
+  - 데이터에 숨겨진 유저-아이템 관계의 잠재적 특성/패턴을 찾는다
+  - vs NBCF
+    - NBCF는 유저/아이템 벡터를 데이터를 통해 계산된 형태로 저장(Memory-based)
+    - MBCF의 유저/아이템 벡터는 학습을 통해 변하는 파라미터
+  - Matrix Factorization 기법
+    - 최근에는 Deep Learning을 활용하는 기법이 높은 성능
+  
+  - 유저-아이템 데이터는 학습에만 사용되고 학습된 모델은 압축된 형태로 저장
+  - sparse한 데이터에서도 좋은 성능
+  - overfitting 방지
+    - 전체 데이터 패턴 학습이 가능하기 때문
+  - Limited Coverage 극복
+    - NBCF는 공통의 유저/아이템을 많이 공유해야지만 유사도 값이 정확해짐
+  - Implicit Feedback
+    - user의 선호도를 간접적으로 알 수 있는 데이터
+    - 유저-아이템 간 상호작용이 있었다면 1(positive)을 원소로 갖는 행렬로 표현 가능
+  - Latent Factor (Embedding) Model
+    - 유저와 아이템 관계를 잠재적 요인으로 표현할 수 있다고 보는 모델
+    - 유저-아이템 행렬을 저차원의 행렬로 분해하는 방식
+    - 같은 벡터 공간에 유저와 아이템 벡터가 놓일 경우 유사한 정도를 확인 가능하다
+- Singular Vector Decomposition (SVD)
+  - Rating Matrix R에 대해 유저와 아이템의 잠재 요인을 포함할 수 있는 행렬로 분해
+    - 유저 잠재 요인 행렬
+    - 잠재 요인 대각 행렬
+    - 아이템 잠재 요인 행렬
+  - 선형대수의 차원 축소 기법
+  - Truncated SVD
+    - 대표값으로 사용될 k개의 특이치만 사용
+    - K개의 Latent Factor는 유추할 수 있을 뿐 무엇을 의미하는지는 알 수 없다
+  - SVD의 한계점
+    - 행렬의 Knowledge가 불완전할 때 정의되지 않는다
+    - Imputation을 통해 Dense Matrix를 만들어야만 한다
+    - 데이터 양이 증가되고 Computation 비용이 높아진다
+    - 데이터가 왜곡되어 예측 성능을 떨어뜨리며, Overfitting을 낳는다
+- SVD의 원리를 차용하되 다른 접근 방법이 필요!
