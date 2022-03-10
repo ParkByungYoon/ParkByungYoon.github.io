@@ -1,5 +1,5 @@
 ---
-layout: wide
+layout: single
 title: 'Recommendation System with MLP'
 ---
 ## Recommender System with DL
