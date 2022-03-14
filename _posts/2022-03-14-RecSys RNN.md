@@ -1,3 +1,7 @@
+---
+layout: single
+title: 'Recommendation System with RNN'
+---
 ## RNN Families
 
 1. Recurrent Neural Network (RNN)

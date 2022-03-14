@@ -1,3 +1,7 @@
+---
+layout: single
+title: 'Recommendation System with GNN'
+---
 ## Graph Neural Network
 1. Graph
 
