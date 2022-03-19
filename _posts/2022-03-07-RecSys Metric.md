@@ -3,10 +3,10 @@ layout: single
 title: 'Recommendation System Metric'
 ---
 # 추천 시스템 평가 지표
-- 비즈니스 / 서비스 관점
+## 비즈니스 / 서비스 관점
   - 매출 증가
   - CTR(노출 대비 클릭률) 상승
-- 품질 관점
+## 품질 관점
 - Offline Test
   - 추천 모델을 검증하는 단계
   - 실제 서비스 상황에서는 다른 양상 (로그 데이터를 기반으로 학습하는 serving bias 존재)
@@ -21,13 +21,13 @@ title: 'Recommendation System Metric'
     - 모든 유저에 대한 AP 평균
 - Normalized Discounted Cumulative Gain(NDCG)
   - Top K 리스트를 만들고 유저가 선호하는 아이템을 비교
-  - 추천 순서에 가중치를 더 많이 두어 성능 평가
+  - 추천 순위가 높을 수록 가중치를 더 많이 두어 성능 평가
     - 1에 가까울수록 좋다
   - MAP와는 달리 연관성을 binary가 아닌 수치로도 사용이 가능하다
   - Cumulative Gain
-    - 상위 K개의 아이템에 대해 관련도를 합친것
+    - 상위 K개의 아이템에 대해 관련도를 합친것 (선호도)
   - Discounted Cumulative Gain
-    - 순서에 따라 Cumulative Gain을 Discount한다
+    - 순위에 따라 Cumulative Gain을 Discount한다
   - Ideal DCG
     - 가능한 DCG 값 중 제일 큰 값으로 이상적인 추천이 일어났을 때 GCD값을 말한다
   - Normalized DCG

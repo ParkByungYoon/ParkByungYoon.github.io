@@ -28,7 +28,7 @@ title: 'Recommendation System 연관 분석'
     - 1이라면 X,Y는 독립적
     - 1보다 크다면 양의 상관관계
     - 1보다 작다면 음의 상관관계
-  - Item 수가 많아질수록 rule의 수가 기하급수적으로 많아지므로 유의미한 rule만을 사용해야함
+  - Item 수가 많아질수록 rule(X,Y 관계)의 수가 기하급수적으로 많아지므로 유의미한 rule만을 사용해야함
     - minimum support, minimum confidence로 의미없는 rule을 screen out
     - lift로 의미있는 rule을 평가
     - why? P(Z|X) = 0.2 P(Z) = 0.02
