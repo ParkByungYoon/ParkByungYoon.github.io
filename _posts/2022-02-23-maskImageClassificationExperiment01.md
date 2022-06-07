@@ -16,6 +16,3 @@ title: '2022-02-23 이미지 분류대회 실험일지'
   - Label Smoothing Loss function 사용
   - Data Augmentation 사용해보기
   - 어느 클래스가 젤 많이 틀리는지 확인해보자
-
-## baseline code
-  
