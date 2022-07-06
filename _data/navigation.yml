@@ -8,6 +8,8 @@ main:
     url: /lecture/
   - title: "Report"
     url: /Report/
+  - title: "Category"
+    url: /categories/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
