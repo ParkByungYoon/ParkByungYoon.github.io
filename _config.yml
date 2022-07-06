@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" # "default","air", "aqua", "contrast", "dark",
 locale                   : "en-US"
 title                    : "윤봉박 저장소"
 title_separator          : "-"
-subtitle                 : "Machine Learning Paper Review, Mathematics"# site tagline that appears below site title in masthead
+subtitle                 : "Machine Learning, Paper Review, Mathematics"# site tagline that appears below site title in masthead
 name                     : "Park Byungyoon"
 description              : "제 첫 Github 블로그이며, 일기장처럼 편하게 쓸 예정입니다"
 url                      : "https://ParkByungYoon.github.io"
