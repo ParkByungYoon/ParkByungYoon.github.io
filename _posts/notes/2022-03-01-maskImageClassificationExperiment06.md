@@ -1,8 +1,8 @@
 ---
 layout: single
-title: '2022-03-01 이미지 분류대회 실험일지'
+title: '이미지 분류대회 실험일지 - 06'
 categories:
-	- Experiment Report
+  - Experiment Report
 ---
 ## 2022-03-01 실험 일지
 - Data Augmentation

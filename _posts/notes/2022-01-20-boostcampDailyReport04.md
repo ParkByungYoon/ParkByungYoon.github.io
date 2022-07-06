@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "boostcamp Daily Report - 04"
+title: 'boostcamp Daily Report - 04'
 categories:
-	- boostcamp Daily Report
+  - boostcamp Daily Report
 ---
 
 ## 1. 새로 알게된 내용

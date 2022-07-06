@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "boostcamp Daily Report - 03"
+title: 'boostcamp Daily Report - 03'
 categories:
-	- boostcamp Daily Report
+  - boostcamp Daily Report
 ---
 ## 1. 새로 알게된 내용
 - **softmax 함수가 e^x^를 사용하는 이유**

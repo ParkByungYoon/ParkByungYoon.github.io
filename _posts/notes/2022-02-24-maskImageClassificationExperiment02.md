@@ -1,8 +1,8 @@
 ---
 layout: single
-title: '2022-02-24 이미지 분류대회 실험일지'
+title: '이미지 분류대회 실험일지 - 02'
 categories:
-	- Experiment Report
+  - Experiment Report
 ---
 # 2022-02-24 실험일지
 ## Model Output 확인
