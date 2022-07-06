@@ -1,9 +1,10 @@
 ---
 layout: single
-title: "boostcamp Daily Report - 02"
+title: 'boostcamp Daily Report - 02'
 categories:
 	- boostcamp Daily Report
 ---
+
 ## 1. 새로 알게된 내용
 - **역행렬을 이용한 선형 회귀 분석**
 	- 데이터 행렬 X에 $\beta$벡터를 곱해주면 선형모델식을 구할 수 있다. 이때 어떤 $\beta$를 쓰느냐에 따라 데이터들을 잘 표현할 수 있다.
