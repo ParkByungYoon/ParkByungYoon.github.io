@@ -1,6 +1,8 @@
 ---
 layout: single
-title: "Daily Report - 01"
+title: "boostcamp Daily Report - 01"
+categories:
+	- boostcamp Daily Report
 ---
 ## 1. 새로 알게된 내용
 - **컴파일 vs 인터프리터**

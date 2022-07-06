@@ -1,6 +1,8 @@
 ---
 layout: single
-title: Daily Report - 07
+title: "boostcamp Daily Report - 07"
+categories:
+	- boostcamp Daily Report
 ---
 ## 1. 새로 알게된 내용
 - nn.Module

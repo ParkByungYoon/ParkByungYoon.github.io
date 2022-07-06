@@ -1,6 +1,8 @@
 ---
 layout: single
 title: '2022-02-26 이미지 분류대회 실험일지'
+categories:
+	- Experiment Report
 ---
 ## 2022-02-26 실험 일지
 - CUDA GPU Utilization
