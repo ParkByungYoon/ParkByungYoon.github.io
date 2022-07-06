@@ -1,19 +1,9 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: /docs/
-  - title: "Lecture"
-    url: /lecture/
-  - title: "Report"
-    url: /Report/
+  - title: "About Me"
+    url: https://www.notion.so/2bc7376f0fa64db989062cdf50abd1f6
   - title: "Category"
     url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
 docs:
   - title: Getting Started
     children:
