@@ -2,7 +2,7 @@
 layout: single
 title: 'boostcamp Daily Report - 05'
 categories:
-  - boostcamp Daily Report
+  - boostcamp Record
 ---
 ## 1. 새로 알게된 내용
 - **2차원 Covolution 연산**
