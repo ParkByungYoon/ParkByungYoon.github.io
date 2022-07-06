@@ -288,4 +288,4 @@ defaults:
       comments: # true
       share: true
       related: true
-      show_dates: true
+      show_date: true
