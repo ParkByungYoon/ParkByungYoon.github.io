@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System 연관 분석'
+categories:
+  - boostcamp AI tech
 ---
 ## 연관 분석
 - 연관 규칙과 탐색 알고리즘

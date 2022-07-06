@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Pytorch Dataset과 Dataloader'
+categories:
+  - boostcamp AI tech
 ---
 
 ## Data Flow

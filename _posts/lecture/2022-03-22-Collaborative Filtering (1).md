@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Collaborative Filtering - 1'
+categories:
+  - boostcamp AI tech
+---
 ## Memory-based CF for Rating Prediction
 
 사용자가 아이템에 부여할 평점은 다른 유사한 사용자가 부여한 또는 유사한 아이템에 부여된 평점을 기반으로 추정할 수 있을 것이고 이때 유사한 사용자 또는 아이템일수록 더 높은 중요도를 가진다

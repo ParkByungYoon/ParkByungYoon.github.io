@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'File System & Terminal'
+categories:
+  - boostcamp AI tech
 ---
 
 ## File System & Terminal Basic

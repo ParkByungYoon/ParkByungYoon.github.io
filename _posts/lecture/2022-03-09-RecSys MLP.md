@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System with MLP'
+categories:
+  - boostcamp AI tech
 ---
 ## Recommender System with DL
 - 추천시스템에서 딥러닝을 활용하는 이유

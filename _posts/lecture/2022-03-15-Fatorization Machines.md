@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Factorization Machines'
+categories:
+  - boostcamp AI tech
+---
 ## Factorization Machines
 
 SVM과 Factorization Model의 장점을 결합한 FM을 처음 소개한 논문

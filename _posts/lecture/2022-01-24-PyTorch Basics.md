@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Pytorch Operations'
+categories:
+  - boostcamp AI tech
 ---
 # Pytorch Operations
 - numpy operation와 비슷

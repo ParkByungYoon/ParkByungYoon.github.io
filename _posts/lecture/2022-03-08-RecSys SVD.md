@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System Singular Vector Decomposition'
+categories:
+  - boostcamp AI tech
 ---
 # Model Based Collaborative Filtering
 - NBCF 한계

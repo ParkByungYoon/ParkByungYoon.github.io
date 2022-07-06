@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Context-aware Recommendation'
+categories:
+  - boostcamp AI tech
+---
 ## Context-aware Recommendation
 
 CF의 경우 user나 item의 meta-data를 사용하기에 어려움이 있으며 MF 기법을 활용한 CF는 상호작용 정보가 부족할 경우(cold start)에 대한 대처가 어렵다

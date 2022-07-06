@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Precision & Recall'
+categories:
+  - boostcamp AI tech
+---
 ## Precision
 - TP / TP+FP
 - 예측중 한개만 Positive이어도 맞아다면 1.0

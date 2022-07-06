@@ -1,6 +1,8 @@
 ---
 layout: single
 title: '딥러닝에서의 확률론 맛보기'
+categories:
+  - boostcamp AI tech
 ---
 
 ## 딥러닝에서의 확률론

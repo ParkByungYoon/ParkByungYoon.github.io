@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Collaborative Filtering - 2'
+categories:
+  - boostcamp AI tech
+---
 ## Deep Learning based Collaborative Filtering
 
 MF의 inner product는 linearity로 인해 표현력에 한계가 있기 때문에 User term과 Item term의 관계를 모델링할 때 inner product 대신에 DNN을 사용한다

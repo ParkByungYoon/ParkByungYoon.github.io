@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Python 개요'
+categories:
+  - boostcamp AI tech
 ---
 
 ## Python 개요

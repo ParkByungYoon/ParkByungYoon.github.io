@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System with RNN'
+categories:
+  - boostcamp AI tech
 ---
 ## RNN Families
 

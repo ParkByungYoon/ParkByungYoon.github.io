@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Python String/Function Concept & Coding convention'
+categories:
+  - boostcamp AI tech
 ---
 
 ## String

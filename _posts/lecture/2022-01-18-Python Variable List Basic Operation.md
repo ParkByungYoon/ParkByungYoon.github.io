@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Variable, List, Basic Operation'
+categories:
+  - boostcamp AI tech
 ---
 
 ## Variable & List

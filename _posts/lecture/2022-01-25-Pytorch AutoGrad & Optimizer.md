@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Pytorch 구성 단위'
+categories:
+  - boostcamp AI tech
 ---
 ## torch.nn.Module
 - 딥러닝을 구성하는 Layer의 base class

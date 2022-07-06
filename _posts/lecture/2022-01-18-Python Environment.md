@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Python 실행환경'
+categories:
+  - boostcamp AI tech
 ---
 
 ## Python 실행환경

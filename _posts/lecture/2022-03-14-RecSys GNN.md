@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System with GNN'
+categories:
+  - boostcamp AI tech
 ---
 ## Graph Neural Network
 1. Graph

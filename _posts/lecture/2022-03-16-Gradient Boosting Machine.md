@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'Gradient Boosting Machine'
+categories:
+  - boostcamp AI tech
+---
 ## Gradient Boosting Machine (GBM)
 
 GBM은 CTR 예측을 통해 개인화된 추천 시스템을 만들 수 있는 또 다른 대표적인 모델이다. 대표적으로 하이퍼 커넥트 하쿠나 라이브의 추천시스템은 서비스 데이터가 축적됨에 따라 초기의 인기도 기반 추천 또는 휴리스틱 기반 추천 시스템에서 탈피했으며, 하이퍼파라미터에 비교적으로 민감하지 않은 (robust) GBM 모델을 사용했다

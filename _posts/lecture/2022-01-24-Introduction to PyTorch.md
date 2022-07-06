@@ -1,6 +1,8 @@
 ---
 layout: single
 title: '딥러닝 프레임워크 Pytorch 알아보기'
+categories:
+  - boostcamp AI tech
 ---
 ## PyTorch란
 - 딥러닝 Framework

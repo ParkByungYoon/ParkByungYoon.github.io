@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Recommendation System Metric'
+categories:
+  - boostcamp AI tech
 ---
 # 추천 시스템 평가 지표
 ## 비즈니스 / 서비스 관점

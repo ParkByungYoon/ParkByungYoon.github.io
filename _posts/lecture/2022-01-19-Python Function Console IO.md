@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 'Python Function & Console I/O'
+categories:
+  - boostcamp AI tech
 ---
 
 ## 함수
