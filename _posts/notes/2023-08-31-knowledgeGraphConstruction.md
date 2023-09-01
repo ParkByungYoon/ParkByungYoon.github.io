@@ -1,3 +1,10 @@
+---
+layout: single
+title: 'Knowledge Graph Constuction'
+categories:
+  - Knowledge Graph
+---
+
 # Knowledge Graph Construction
 
 ## 1. Introduction
