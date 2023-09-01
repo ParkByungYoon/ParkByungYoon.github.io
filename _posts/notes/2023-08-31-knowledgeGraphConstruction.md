@@ -60,13 +60,13 @@ Knowledge Graph이 구축되어 있을 때 시도할 수 있는 과정으로 Kno
 
 ### 3-1. Named Entity Recognition 
 
-Named Entity
+#### Named Entity
 
 Entity가 될 수 있는 고유명사 등의 것으로 목적(Class)에 따라 정의
 
 클래스를 나누는 기준에 따라 Entity에 포함되지 않는 등 NER 과정이 바뀔 수 있다.
 
-- NER의 적용 및 평가
+#### NER의 적용 및 평가
 
 적용은 NER tagging을 통해 수행
 
@@ -76,70 +76,62 @@ Entity가 될 수 있는 고유명사 등의 것으로 목적(Class)에 따라 �
 
 ### 3-2. Relation Extraction
 
-RE Approaches
-
-Semi-Supervised RE
+#### Semi-Supervised Approaches
 
 token embedding 상에서 소수의 labeled data와 유사한 unlabeled data를 찾아 새로 labeling해서 data의 수를 증가시킨다.
 
-Discriminative Approaches
+#### Discriminative Approaches
 
-Classification Model
+- Classification Model: s,r,o 쌍에 대해 가장 높은 likelihood를 구해 결정 (MLE)
 
-s,r,o 쌍에 대해 가장 높은 likelihood를 구해 결정 (MLE)
+- Sequential Tagging Model: 사전 학습된 언어 모델의 인코딩을 활용하여 Input text에 대해 Relation을 포함하는 올바른 tagging을 수행
 
-Sequential Tagging Model
-
-사전 학습된 언어 모델의 인코딩을 활용하여 Input text에 대해 Relation을 포함하는 올바른 tagging을 수행
-
-Generative Approaches
+#### Generative Approaches
 
 seq2seq 모델을 통해 autoregressive하게 s,r,o 쌍을 생성
 
 ### 3-3. Coreference Resolution
 
-mention detection: entity를 찾는 과정 (NER)
-mention clustering: 임베딩을 바탕으로 클러스터링하여 유사도가 높은 단어를 찾는 과정
+- mention detection: entity를 찾는 과정 (NER)
+
+- mention clustering: 임베딩을 바탕으로 클러스터링하여 유사도가 높은 단어를 찾는 과정
 
 해당 과정들은 end-to-end로 일어나고 이를 정리하면 언어 모델을 통해 embedding하고 산출된 entity들의 representation을 활용해 clustering을 진행하는 것으로 동일한 entity를 표현하는 mention을 탐색한다고 볼 수 있다.
 
 ### 3-4. Knowledge Graph Completion
 
-- Closed World Assumption (CWA)
+#### Closed World Assumption (CWA)
 KG 상에는 모든 facts가 표현되고 있고 특정 facts가 존재하지 않는다면 해당 관계는 거짓이다
 
-- Open World Assumption (OWA)
+#### Open World Assumption (OWA)
 KG 상에서 특정한 facts가 존재하지 않아도 해당 관계의 진위 여부는 알 수 없다
 
-- Knowledge Graph Completion Subtasks
+#### Knowledge Graph Completion Subtasks
 
-Entity prediction
-(s,r,?) 혹은 (?,r,o)를 input으로 해서 entity를 예측해 KG에 표현된 fact 이외에 새로운 관계를 얻는다
+- Entity prediction: (s,r,?) 혹은 (?,r,o)를 input으로 해서 entity를 예측해 KG에 표현된 fact 이외에 새로운 관계를 얻는다
 
-Relation prediction
-(s,?,o)를 input으로 하여 적절한 relation을 예측
+- Relation prediction: (s,?,o)를 input으로 하여 적절한 relation을 예측
 
-Link prediction
-Node 간 Missing Edge를 예측
+- Link prediction: Node 간 Missing Edge를 예측
 
-- KGC Approaches
-
-Embedding based
+#### Embedding based Approaches
 
 (s,r,o) 각각의 Embedding vector를 구해 s+r=o 형태로 KGC를 수행
-TransE 모두 동일한 차원 임베딩
-TransR Entity와 relation은 서로 다른 차원이기에 projection 진행
 
-Relation Path Reasoning
+- TransE: 모두 동일한 차원 임베딩
+- TransR: Entity와 relation은 서로 다른 차원이기에 projection 진행
+
+#### Relation Path Reasoning
 
 KG에서는 Composition Relation이 성립한다고 가정
+
 여기서 Composition Relation이란 x,y가 연결되어있고 y,z가 연결되어있다면 x,z 또한 연결되어있다 (multi-hop을 통해 복잡한 관계를 추론) 일반적으로 random-walk를 수행하여 조금씩 확장해 나가며 새로운 path를 찾는다.
 
-Rule-based
+#### Rule-based Approaches
 
 logical rule을 활용해서 새로운 relation을 탐색 (rule mining tool)
 
-Triple classification based
+#### Triple classification based Approaches
 
 GNN을 활용해 특정한 fact의 embedding을 구해서 참,거짓인지 이진 분류를 수행
 
