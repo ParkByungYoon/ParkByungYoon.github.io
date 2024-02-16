@@ -1,3 +1,12 @@
+---
+layout: single
+title: 'GAT paper review'
+categories:
+  - Graph Neural Network
+---
+
+# GRAPH ATTENTION NETWORKS
+
 https://arxiv.org/pdf/1710.10903.pdf
 
 # 1 Introduction

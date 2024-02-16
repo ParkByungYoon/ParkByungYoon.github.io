@@ -1,3 +1,10 @@
+---
+layout: single
+title: 'GCN paper review'
+categories:
+  - Graph Neural Network
+---
+
 # SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS
 
 https://arxiv.org/pdf/1609.02907.pdf

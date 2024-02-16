@@ -1,3 +1,14 @@
+---
+layout: single
+title: 'GraphSAGE paper review'
+categories:
+  - Graph Neural Network
+---
+
+# Inductive Representation Learning on Large Graphs
+
+https://arxiv.org/pdf/1706.02216.pdf
+
 # 1. Introduction
 
 <aside>
