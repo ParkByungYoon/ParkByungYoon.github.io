@@ -82,17 +82,17 @@ Graph Attention을 위한 Block Layer 설계
 
 Input (N개의 노드 각각은 F feature를 가짐)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/f9dd6ed1-bef0-474b-9db2-559a1c631098/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled.png)
 
 output (N개의 노드 각각이 layer 통해 potentially different cardinality F’으로 나옴)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/437000b1-286f-43c6-90d7-011a5d67e03c/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled1.png)
 
 linear transformation 먼저 수행한 뒤, F’의 차원 node들에 self-attention을 수행한다.
 
 eij는 attention mechanism을 이용해 구한 node i에게 node j feature의 중요한 정도를 의미, 즉 attention coefficient를 구하는 과정이다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/0e379bbc-0b8a-47a3-b2aa-b11630c3f2b9/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled2.png)
 
 가장 일반적인 attention mechanism은 모든 구조적인 정보가 들어가지 않아 모든 노드가 다른 노드에 대해 attend 가능하다.
 
@@ -102,11 +102,11 @@ eij는 node i에 대해 neighborhood에 해당하는 노드들에 대해서만 �
 
 다른 노드들과 비교를 쉽게 하기 위해 계수들을 확률 값으로 만들어주었다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/1fffb32e-5e87-40c3-9124-fa2f0780de4c/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled3.png)
 
 본 논문의 실험에서는 attention mechanism은 single layer가 기본이며 최종적으로 다음과 같이 표현된다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/ab30f23e-7020-4568-9994-7ac8f4e6b957/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled4.png)
 
 linear projection을 통해 나온 node i와 node j에 대한 hidden representation을 concat
 
@@ -114,20 +114,20 @@ linear projection을 통해 나온 node i와 node j에 대한 hidden representat
 
  
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/5d04c7f6-5e0b-48e9-b139-df60d7cd8069/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled5.png)
 
 한번 구하고 나면, 이는 노드들이 가지는 feature들의 linear combination을 계산하는데 사용된다. 즉, node i에 대한 hidden representation을 구할 때 아래와 같이 node i의 이웃에 해당하는 모든 node들의 coefficient weighted sum으로 구한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/8eea6385-435d-418e-9a29-206f364eacaa/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled6.png)
 
 이 method 또한 self-attention의 learning에 안정성을 부여하기 위해 multi-head attention을 사용할 수 있다. 아래와 같이 K번의 independent한 attention mechanism을 통해 나온 결과 (각 노드별로 KF’ 만큼의 결과)를 concatenate하는 형식으로 진행하였을 때, 더 좋은 성능을 이끌어냄을 확인하였다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/cc17a21c-bc45-4831-b238-832f872434a7/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled7.png)
 
 사실 concatenation은 sensible 하지못한 탓에, averaging을 사용하고 가장 마지막에 non-linear function(sigmoid or softmax)를 추가하는 형태로 고쳐 사용한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/fa5a5fbb-0188-4a45-9578-466834ba1d7a/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled8.png)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/2019a248-15ff-4ae8-95c4-becb5e7d23b3/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GAT/Untitled9.png)
 
 위 그림은 K=3 인 multi-head attention을 사용한 결과로, attention을 각각 적용하여 concat 또는 avg를 통해 hidden representation을 구하는 것을 확인할 수 있다.

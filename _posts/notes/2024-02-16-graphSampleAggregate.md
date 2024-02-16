@@ -40,15 +40,15 @@ GraphSAGE 모델이 학습되어있다고 가정한다면,
 
 K개의 aggregator function (주변 노드로부터 정보를 집계)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/9e7420f9-4db1-4de8-a963-acf2c97ccf11/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled.png)
 
 K개의 Weight Matrix (서로 다른 hop간 정보를 전달)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/eb7172c6-9aeb-4477-96d8-26e53e2d3e54/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled1.png)
 
 Embedding Generation Algorithm
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/fed02564-18ef-4798-83c0-ae6edeb14163/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled2.png)
 
 2: K-hop 만큼 반복
 
@@ -68,7 +68,7 @@ Unsupervised setting을 위해 output representation에 대해 graph-based loss 
 
 graph-based loss function
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/5ee2d52b-915f-4066-a4bf-d2e7df9123c6/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled3.png)
 
 가까운 노드일수록 비슷한 representation, 먼 노드일수록 구분되는 representation을 가지도록 학습
 
@@ -84,7 +84,7 @@ Pn은 negative sampling distribution이고, Q는 negative sample들의 숫자이
 
 ### 1. Mean Aggregator
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/01899ee3-f1c8-4e1f-977a-359a2984a439/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled4.png)
 
 Algorithm 1의 4,5번 과정을 위 수식으로 대체한다면, GCN의 inductive한 propagation rule을 유도해낼 수 있다. (modified mean-based aggregator convolution, Localized Spectral Convolution을 linear approximation한 과정)
 
@@ -96,7 +96,7 @@ LSTM을 aggregator로 사용한다면 표현력이 풍부하다는 장점이 있
 
 ### 3. Pooling Aggregator
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/5ff7e13f-04e3-4ace-95d7-b1d964b10c87/36d05f59-34d3-4951-b3f0-07fde93b1dd2/Untitled.png)
+![Untitled](../../assets/images/2024-02-16-GraphSAGE/Untitled5.png)
 
 마지막으로 Pooling 기법은 symmetric하고, 학습 가능하다. 위 수식에서는 single layer로 구성되었지만 multi-layer로도 구성할 수 있다. (Wpool: neighbor set에 존재하는 노드의 feature들을 표현하는 역할)
 
