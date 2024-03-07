@@ -2,7 +2,7 @@
 layout: single
 title: '이미지 분류대회 실험일지 - 03'
 categories:
-  - Experiment Report
+  - boostcamp AI tech
 ---
 # 2022-02-25 실험일지
 ## Model Selection

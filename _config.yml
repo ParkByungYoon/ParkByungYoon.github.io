@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "dirt" # "default","air", "aqua", "contrast", "dark",
 # Site Settings
 locale                   : "en-US"
 title                    : "윤봉박 저장소"
-title_separator          : "-"
-subtitle                 : "Machine Learning, Paper Review, Mathematics"# site tagline that appears below site title in masthead
+title_separator          : ""
+subtitle                 : "ML/DL, CS"# site tagline that appears below site title in masthead
 name                     : "Park Byungyoon"
-description              : "제 첫 Github 블로그이며, 일기장처럼 편하게 쓸 예정입니다"
+description              : "그냥 공부하다 정리해둔 거 저장용"
 url                      : "https://ParkByungYoon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

@@ -2,7 +2,7 @@
 layout: single
 title: '이미지 분류대회 실험일지 - 05'
 categories:
-  - Experiment Report
+  - boostcamp AI tech
 ---
 ## 2022-02-27 실험 일지
 - Efficient Network

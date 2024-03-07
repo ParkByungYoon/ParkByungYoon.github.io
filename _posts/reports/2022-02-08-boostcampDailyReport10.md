@@ -2,7 +2,7 @@
 layout: single
 title: 'boostcamp Daily Report - 10'
 categories:
-  - boostcamp Record
+  - boostcamp AI tech
 ---
 
 ## 1. 새로 알게된 내용
