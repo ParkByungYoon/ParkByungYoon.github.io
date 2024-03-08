@@ -1,4 +1,14 @@
-Neural Graph Collaborative Filtering
+---
+layout: single
+title: 'NGCF paper review'
+categories:
+  - Graph Neural Network
+  - Recommendation System
+---
+
+# Neural Graph Collaborative Filtering
+
+https://arxiv.org/pdf/1905.08108.pdf
 
 # 1 INTRODUCTION
 
