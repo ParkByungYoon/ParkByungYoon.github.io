@@ -32,7 +32,7 @@ Collaborative signal은 user-item interaction에 있어서 latent한 요소로, 
 
 —> high-order connectivity을 반영하는 구조로 embedding function을 재구성한다는 의미
 
-![Untitled](../../assets/images/2024-03-08/Untitled.png)
+![Untitled](../../assets/images/2024-03-09/Untitled.png)
 
 위 그림에서 high-order connectivity는 u1에서 시작하여 length l이 1보다 큰 지점에 존재하는 모든 노드로 이어지는 path들을 의미한다. (u1←i2←u2)는 u1과 u2가 i2에 대해 동일하게 반응한 behavior similarity를 의미하고, 이는 u1←i2←u2←i4 는 u1과 비슷한 u2가 소비한 i4를 선택할 가능성이 있다고 해석할 수 있다. 더 나아가 본다면, u1은 하나의 path(u1←i2←u2←i5)를 가진 i5보다 두 개의 path(u1←i2←u2←i4, u1←i3←u3←i4)를 가진 i4를 더 선호할 수 있다 
 
@@ -50,7 +50,7 @@ HOP-Rec 이라는 모델 또한 high-order한 connectivity를 제공하고자 �
 
 # 2 METHODOLOGY
 
-![Untitled](../../assets/images/2024-03-08/Untitled1.png)
+![Untitled](../../assets/images/2024-03-09/Untitled1.png)
 
 NGCF는 총 3가지 component로 구성
 
@@ -72,11 +72,11 @@ NGCF는 총 3가지 component로 구성
 
 **Message Construction**
 
-![Untitled](../../assets/images/2024-03-08/Untitled2.png)
+![Untitled](../../assets/images/2024-03-09/Untitled2.png)
 
 i에서 u로 가는 message embedding을 의미하고, item/user embedding ei, eu를 input으로 받고 coefficient pui를 통해 edge (u,i)의 decay factor 조절한다.
 
-![Untitled](../../assets/images/2024-03-08/Untitled3.png)
+![Untitled](../../assets/images/2024-03-09/Untitled3.png)
 
 기존의 일반적인 GCN은 message를 전달하려는 대상의 contribution만을 고려하지만, 위에선 ei 뿐만 아니라 eu를 element-wise product한 값을 더함으로써 ei와 eu 사이의 affinity에 영향을 받도록 구성하였다. (user node와 더 비슷한 item node 일 수록 많이 반영)
 
@@ -87,7 +87,7 @@ pui를 graph laplacian norm 값으로 사용하는 일은
 
 **Message Aggregation**
 
-![Untitled](../../assets/images/2024-03-08/Untitled4.png)
+![Untitled](../../assets/images/2024-03-09/Untitled4.png)
 
 self-connection(mu←u) 을 통해 자기 자신에 대한 feature를 유지한 채 연결된 item들에 대한 message를 summation 함으로써 representation을 얻는다 
 
@@ -95,17 +95,17 @@ self-connection(mu←u) 을 통해 자기 자신에 대한 feature를 유지한 
 
 앞선 first-order connectivity modeling layer를 여러번 쌓음을 통해 더 고차원적인 connectivity를 이끌어낼 수 있다. 이는 user와 item 사이 relevance score를 구할 때 중요한 collaborative signal을 가지고 있다.
 
-![Untitled](../../assets/images/2024-03-08/Untitled5.png)
+![Untitled](../../assets/images/2024-03-09/Untitled5.png)
 
-![Untitled](../../assets/images/2024-03-08/Untitled6.png)
+![Untitled](../../assets/images/2024-03-09/Untitled6.png)
 
 각 노드의 representation은 이전 message-passing step에서 나온 message들(l-1 hop neighbor information)을 기억해뒀다가 생성된다. 이는 각 layer 별로 representation을 얻을 수 있음을 의미한다.
 
 **Propagation Rule in Matrix Form**
 
-![Untitled](../../assets/images/2024-03-08/Untitled7.png)
+![Untitled](../../assets/images/2024-03-09/Untitled7.png)
 
-![Untitled](../../assets/images/2024-03-08/Untitled8.png)
+![Untitled](../../assets/images/2024-03-09/Untitled8.png)
 
 이렇게 matrix-form propagation 을 하면, 모든 user와 item 에 대한 representation을 동시에 업데이트 할 수 있고, 이는 node sampling 과정을 생략하여 복잡도를 크게 줄일 수 있다.
 
@@ -115,10 +115,10 @@ L개의 layer를 통해 propagation을 마치고 나면, 총 L개의 representat
 
 최종적으로는 L개의 representation을 concatenate를 진행하여 (user/item 에 대한) 하나의 representation을 얻는다
 
-![Untitled](../../assets/images/2024-03-08/Untitled9.png)
+![Untitled](../../assets/images/2024-03-09/Untitled9.png)
 
 이를 통해 우리는 embedding propagation을 통해 representation을 풍부하게 할 뿐만 아니라 layer의 수를 제어함을 통해 어느 정도의 정보량을 담을지도 결정할 수 있게 되었다.
 
-![Untitled](../../assets/images/2024-03-08/Untitled10.png)
+![Untitled](../../assets/images/2024-03-09/Untitled10.png)
 
 target item에 대한 user의 preference를 예측은 위와 같이 inner product를 진행한다
