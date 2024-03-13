@@ -1,3 +1,9 @@
+---
+layout: single
+title: 'GIN paper review'
+categories:
+  - Graph Neural Network
+---
 # HOW POWERFUL ARE GRAPH NEURAL NETWORKS? (ICLR 2019)
 
 https://arxiv.org/pdf/1810.00826v3.pdf
