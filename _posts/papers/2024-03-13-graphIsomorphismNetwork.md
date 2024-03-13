@@ -92,12 +92,11 @@ GNN은 network의 구조와 주변 노드의 feauter들(rooted subtree 구조)�
 ### Definition 1.
 
 <pre>
-<code>multiset은 해당 요소에 대해 여러 개의 instance들이 허용되는 set을 의미
+multiset은 해당 요소에 대해 여러 개의 instance들이 허용되는 set을 의미
 2-tuple X = (S,m)
 S: X의 고유한 원소로부터 형성되는 기본 집합
 m : S → N ≥ 1은 원소의 다중성을 제공
 </pre>
-</code>
 GNN의 표현력을 확인하기 위해선, GNN이 두 개의 노드에 대해 같은 embedding space에 mapping 하는지 분석해야한다. 직관적으로, 뛰어난 GNN은 각각의 노드가 동일한 subtree 구조를 가지고 있다고 했을 때 해당 두 노드는 같은 location으로 mapping한다. 
 
 subtree는 node neighbor에 의해 정해지기에, GNN이 두 개의 neighborhoods (two multisets)을 같은 embedding 또는 representation으로 mapping하는지를 확인하면 되는 문제로 좁혀진다. 성능이 뛰어난 GNN은 절대로 다른 neighborhoods(multisets of feature vectors)를 같은 representation을 가지도록 mapping하지 않는다.
@@ -111,15 +110,14 @@ subtree는 node neighbor에 의해 정해지기에, GNN이 두 개의 neighborho
 ### Lemma 2.
 
 <pre>
-<code>G1 과 G2를 non-isomorphic graphs 이라 헀을때, 만약 GNN이 G1과 G2를 다른 embedding으로 매핑한다면 WL test 또한 G1과 G2는 not isomorphic 으로 판별
+G1 과 G2를 non-isomorphic graphs 이라 헀을때, 만약 GNN이 G1과 G2를 다른 embedding으로 매핑한다면 WL test 또한 G1과 G2는 not isomorphic 으로 판별
 </pre>
-</code>
 모든 aggregation based한 GNN은 WL 만큼 graph를 구분하는데 있어 강할 것이다. 그런데, 기존에 존재하던 GNN들도 WL test 만큼 좋을까? Theorem 3에서 나오겠지만 대답은 yes이다. neighbor aggregation과 graph-level readout function이 injective 하다면 GNN의 결과는 WL test 만큼 강하다.
 
 ### Theorem 3.
 
 <pre>
-<code>충분한 GNN layer 수가 있고 아래 나오는 condition이 주어진다면, GNN은 WL test를 통해 non-isomorphic 으로 판별된 G1과 G2를 다른 embedding으로 매핑
+충분한 GNN layer 수가 있고 아래 나오는 condition이 주어진다면, GNN은 WL test를 통해 non-isomorphic 으로 판별된 G1과 G2를 다른 embedding으로 매핑
 
 a) GNN은 아래 수식과 같이 반복적으로 feature들을 aggregate하고 update
 
@@ -129,7 +127,6 @@ f: multisets 에 대하여 작용하는 function
 
 b) GNN의 graph-level readout function 또한 injective
 </pre>
-</code>
 
 ![Untitled](../../assets/images/2024-03-13/Untitled9.png)
 
