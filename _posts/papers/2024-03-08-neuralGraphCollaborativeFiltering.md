@@ -2,7 +2,6 @@
 layout: single
 title: 'NGCF paper review'
 categories:
-  - Graph Neural Network
   - Recommendation System
 ---
 
