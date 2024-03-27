@@ -2,7 +2,7 @@
 layout: single
 title: 'LightGCN paper review'
 categories:
-  - Graph Neural Network
+  - Recommendation System
 ---
 
 # **LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation (SIGIR 2020)**
